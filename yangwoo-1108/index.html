@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="장항동 양우로데오시티 11층 1108호 복층 오피스텔 월세. 2026년 올리모델링, 보증금 500 / 월 65.">
+<meta property="og:title" content="양우로데오시티 1108호">
+<meta property="og:description" content="복층 · 2026년 올리모델링 · 가전 새로 구입 · 보증금 500 / 월 65">
+<meta property="og:image" content="https://terra1974.github.io/yangwoo-1108/img/entry.jpg">
+<title>양우로데오시티 1108호</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;800&family=IBM+Plex+Sans+KR:wght@400;500;700&display=swap">
+<style>
+/* Layout: 매물 안내서 — 상단 표제판(주소·호수), 핵심 수치 4칸, 임대 조건, 사진, 요약표, 위치, 문의 순의 한 줄 세로 흐름 */
+:root{
+  --bg:#f3f5f7;
+  --surface:#ffffff;
+  --sunk:#e7ebf0;
+  --ink:#16202c;
+  --ink-soft:#5a6676;
+  --line:#d8dee6;
+  --brand:#173a5e;
+  --accent:#2f7d78;
+  --todo:#a3530f;
+  --todo-bg:#fbefe2;
+  --plate-ink:#eef3f8;
+  --font-display:"Noto Serif KR","Nanum Myeongjo",serif;
+  --font-body:"IBM Plex Sans KR","Malgun Gothic","Apple SD Gothic Neo",sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0f141b; --surface:#171e27; --sunk:#1f2833; --ink:#e9eef4; --ink-soft:#9aa7b7;
+    --line:#2a3542; --brand:#9cc3ea; --accent:#6cc2bb; --todo:#f0b06c; --todo-bg:#2e2216;
+    --plate-ink:#eef3f8; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0f141b; --surface:#171e27; --sunk:#1f2833; --ink:#e9eef4; --ink-soft:#9aa7b7;
+  --line:#2a3542; --brand:#9cc3ea; --accent:#6cc2bb; --todo:#f0b06c; --todo-bg:#2e2216;
+  --plate-ink:#eef3f8; color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:16px;line-height:1.7;font-variant-numeric:tabular-nums}
+.wrap{max-width:960px;margin:0 auto;padding-inline:20px;padding-block:0 72px}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+
+/* 표제판 */
+.plate{background:#173a5e;color:var(--plate-ink);padding-block:44px 36px}
+.plate .wrap{padding-block:0;display:grid;gap:10px}
+.eyebrow{font-size:.78rem;font-weight:700;letter-spacing:.14em;color:#9fd3cd;margin:0}
+h1{font-family:var(--font-display);font-weight:800;font-size:clamp(1.9rem,5vw,2.9rem);line-height:1.25;margin:0;text-wrap:balance}
+.plate .addr{margin:0;color:#c9d6e3;max-width:60ch}
+.plate .addr span{display:block;font-size:.92rem;color:#a9bacb}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.badge-hot{background:#2f7d78;border-color:#2f7d78!important;color:#ffffff!important}
+.badge{font-size:.82rem;font-weight:500;padding:4px 10px;border:1px solid #4d6f92;border-radius:999px;color:#dfe8f1}
+
+section{margin-top:44px}
+h2{font-family:var(--font-display);font-weight:600;font-size:1.35rem;margin:0 0 14px;text-wrap:balance}
+.lead{color:var(--ink-soft);margin:0 0 18px;max-width:62ch}
+
+/* 핵심 수치 */
+.specs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid var(--line);background:var(--line);gap:1px;margin-top:14px}
+.spec{background:var(--surface);padding:18px 14px;text-align:center;min-width:0}
+.spec .v{font-size:1.3rem;font-weight:700;color:var(--brand)}
+.spec .k{font-size:.8rem;color:var(--ink-soft);margin-top:2px}
+
+/* 임대 조건 */
+.terms{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.term{background:var(--surface);border:1px solid var(--line);padding:16px 18px;min-width:0}
+.term .k{font-size:.85rem;color:var(--ink-soft)}
+.term .v{font-size:1.45rem;font-weight:700}
+
+.todo{display:inline-block;font-size:.8rem;font-weight:500;color:var(--todo);background:var(--todo-bg);padding:2px 8px;border-radius:4px;line-height:1.5;vertical-align:middle}
+.term .v .todo{font-size:.85rem}
+.term .v.small{font-size:1.15rem;padding-top:4px}
+
+/* 사진 */
+.hero-photo{margin:0;margin-top:-28px;position:relative;border:1px solid var(--line);background:var(--sunk)}
+.hero-photo{display:flex;justify-content:center}
+.hero-photo img{width:auto;max-width:100%;max-height:680px;height:auto;display:block}
+.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;align-items:start}
+.gallery.tall{grid-template-columns:repeat(4,minmax(0,1fr));margin-top:10px}
+.gallery figure{margin:0;background:var(--surface);border:1px solid var(--line);min-width:0}
+.gallery img{width:100%;height:auto;display:block}
+.gallery figcaption{font-size:.86rem;color:var(--ink-soft);padding:8px 12px}
+
+/* 요약표 */
+.table-box{overflow-x:auto;background:var(--surface);border:1px solid var(--line)}
+table{width:100%;border-collapse:collapse;font-size:.96rem}
+th,td{text-align:left;padding:12px 16px;border-top:1px solid var(--line);vertical-align:top}
+tr:first-child th,tr:first-child td{border-top:0}
+th{width:30%;color:var(--ink-soft);font-weight:500;white-space:nowrap}
+
+/* 위치·문의 */
+.row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.panel{background:var(--surface);border:1px solid var(--line);padding:18px 20px;min-width:0}
+.panel p{margin:0 0 12px}
+.btn{display:inline-block;padding:10px 16px;border:1px solid var(--accent);color:var(--accent);text-decoration:none;font-weight:700;border-radius:6px}
+.near{list-style:none;margin:0 0 14px;padding:0;display:grid;gap:4px}
+.near b{display:inline-block;min-width:4.5em;color:var(--accent)}
+.contact-line{font-size:1.3rem;font-weight:700;user-select:all;margin:0 0 12px}
+
+footer{margin-top:44px;color:var(--ink-soft);font-size:.84rem;border-top:1px solid var(--line);padding-top:16px}
+
+@media (max-width:640px){
+  .specs{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .terms,.row{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr}
+  .gallery.tall{grid-template-columns:1fr 1fr}
+  th{width:38%;white-space:normal}
+}
+</style>
+</head>
+<body>
+
+
+<header class="plate">
+  <div class="wrap">
+    <p class="eyebrow">OFFICETEL · 고양시 일산동구 장항동 · 월세</p>
+    <h1>양우로데오시티 1108호</h1>
+    <p class="addr">경기 고양시 일산동구 장항동 730-1 양우로데오시티 11층 1108호
+      <span>도로명 · 경기 고양시 일산동구 고봉로 32-9</span></p>
+    <div class="badges">
+      <span class="badge badge-hot">2026년 올리모델링</span>
+      <span class="badge badge-hot">가전 새로 구입</span>
+      <span class="badge">즉시 입주 가능</span>
+      <span class="badge">오피스텔(업무용)</span>
+      <span class="badge">전용 10.0평</span>
+      <span class="badge">복층</span>
+      <span class="badge">보증금 500 / 월 65</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <figure class="hero-photo"><img src="img/entry.jpg" alt="현관에서 바라본 1108호. 왼쪽 주방, 오른쪽 붙박이장과 전신거울, 끝에 큰 창" width="789" height="1400"></figure>
+  <div class="specs" aria-label="매물 한눈에 보기">
+    <div class="spec"><div class="v">33.0㎡</div><div class="k">전용면적 (10.0평)</div></div>
+    <div class="spec"><div class="v">11F / 15F</div><div class="k">해당 층 / 총 층수</div></div>
+    <div class="spec"><div class="v">복층 원룸</div><div class="k">내부 구조</div></div>
+    <div class="spec"><div class="v">2026년</div><div class="k">올리모델링</div></div>
+  </div>
+
+  <section aria-labelledby="h-terms">
+    <h2 id="h-terms">임대 조건</h2>
+    <div class="terms">
+      <div class="term"><div class="k">보증금</div><div class="v">500만원</div></div>
+      <div class="term"><div class="k">월세</div><div class="v">65만원</div></div>
+      <div class="term"><div class="k">관리비</div><div class="v small">임차인 부담</div></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-photos">
+    <h2 id="h-photos">사진</h2>
+    <div class="gallery">
+      <figure><img src="img/hero.jpg" alt="복층 계단과 붙박이장, 주방이 보이는 실내 전경" loading="lazy" width="693" height="392"><figcaption>복층 계단과 실내 전경</figcaption></figure>
+      <figure><img src="img/room.jpg" alt="거실 겸 침실과 큰 창" loading="lazy" width="966" height="552"><figcaption>거실 겸 침실과 큰 창</figcaption></figure>
+      <figure><img src="img/view.jpg" alt="간접조명과 창밖 도시 전망" loading="lazy" width="693" height="385"><figcaption>간접조명과 창밖 도시 전망</figcaption></figure>
+      <figure><img src="img/loft.jpg" alt="복층 공간" loading="lazy" width="692" height="391"><figcaption>복층 공간</figcaption></figure>
+      <figure><img src="img/loft2.jpg" alt="복층 안쪽 벽과 조명" loading="lazy" width="966" height="560"><figcaption>복층 안쪽 벽과 조명</figcaption></figure>
+      <figure><img src="img/storage.jpg" alt="복층 수납장" loading="lazy" width="695" height="413"><figcaption>복층 수납장</figcaption></figure>
+    </div>
+    <div class="gallery tall">
+      <figure><img src="img/kitchen.jpg" alt="주방과 드럼세탁기" loading="lazy" width="1050" height="1400"><figcaption>주방과 드럼세탁기</figcaption></figure>
+      <figure><img src="img/fridge.jpg" alt="냉장고와 전자레인지" loading="lazy" width="1050" height="1400"><figcaption>냉장고와 전자레인지</figcaption></figure>
+      <figure><img src="img/bath.jpg" alt="욕실 (샤워부스)" loading="lazy" width="831" height="1400"><figcaption>욕실 (샤워부스)</figcaption></figure>
+      <figure><img src="img/closet.jpg" alt="붙박이장" loading="lazy" width="789" height="1400"><figcaption>붙박이장</figcaption></figure>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-summary">
+    <h2 id="h-summary">매물 요약</h2>
+    <div class="table-box">
+      <table>
+        <tr><th>건물명</th><td>양우로데오시티 101동</td></tr>
+        <tr><th>소재지</th><td>경기 고양시 일산동구 장항동 730-1</td></tr>
+        <tr><th>도로명주소</th><td>경기 고양시 일산동구 고봉로 32-9</td></tr>
+        <tr><th>층 / 호수</th><td>11층 1108호 (지상 15층 · 지하 3층 건물)</td></tr>
+        <tr><th>용도</th><td>오피스텔(업무용)</td></tr>
+        <tr><th>전용면적</th><td>33.0㎡ (10.0평)</td></tr>
+        <tr><th>거래 형태</th><td>월세 · 보증금 500만원 / 월 65만원</td></tr>
+        <tr><th>관리비</th><td>임차인 부담</td></tr>
+        <tr><th>입주 가능일</th><td>즉시 입주 가능</td></tr>
+        <tr><th>방 구조</th><td>복층형 원룸, 욕실 1</td></tr>
+        <tr><th>옵션</th><td>에어컨, 냉장고, 드럼세탁기, 전자레인지, 인덕션 (2026년 새로 구입) · 붙박이장, 수납장, 샤워부스</td></tr>
+                <tr><th>리모델링</th><td>2026년 올리모델링, 가전제품 새로 구입</td></tr>
+        <tr><th>세대수</th><td>663세대 (같은 면적 156세대)</td></tr>
+        <tr><th>현관구조</th><td>복도식</td></tr>
+        <tr><th>난방</th><td>지역난방 (열병합)</td></tr>
+        <tr><th>주차</th><td>367대 (세대당 0.55대)</td></tr>
+        <tr><th>건설사</th><td>양우건설(주)</td></tr>
+        <tr><th>주변환경</th><td>라페스타 상권 · 홈플러스, 롯데백화점 일산점, 이마트 · 일산문화공원, 일산호수공원 · 일산동부경찰서, 일산동구청, 고양지원, 고양등기소 · 3호선 주엽역, 정발산역</td></tr>
+              </table>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-contact">
+    <h2 id="h-contact">위치와 문의</h2>
+    <div class="row">
+      <div class="panel">
+        <p>고봉로 32-9 양우로데오시티</p>
+        <ul class="near">
+          <li><b>상권</b> 라페스타 먹자골목 바로 옆</li>
+          <li><b>쇼핑</b> 홈플러스 · 롯데백화점 일산점 · 이마트</li>
+          <li><b>공원</b> 일산문화공원 · 일산호수공원</li>
+          <li><b>관공서</b> 일산동부경찰서 · 일산동구청 · 고양지원 · 고양등기소</li>
+          <li><b>교통</b> 3호선 주엽역 · 정발산역 · 버스정류장 바로 앞</li>
+        </ul>
+        <a class="btn" href="https://map.naver.com/p/search/%EA%B2%BD%EA%B8%B0%20%EA%B3%A0%EC%96%91%EC%8B%9C%20%EC%9D%BC%EC%82%B0%EB%8F%99%EA%B5%AC%20%EA%B3%A0%EB%B4%89%EB%A1%9C%2032-9" target="_blank" rel="noopener">네이버 지도에서 보기</a>
+      </div>
+      <div class="panel">
+        <p>방문 상담과 매물 문의는 아래로 연락해 주세요.</p>
+        <p class="contact-line">010-8717-6151</p>
+        <a class="btn" href="tel:01087176151">전화 걸기</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    본 페이지는 매물 소개를 위한 참고용 자료입니다. 임대 조건과 권리관계는 계약 전에 별도로 확인해 주세요.
+  </footer>
+</main>
+
+<p class="wrap" style="padding-block:0 32px"><a href="../">← 매물 목록</a></p>
+</body>
+</html>

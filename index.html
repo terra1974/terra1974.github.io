@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>임대 매물 안내</title>
+<meta name="description" content="오피스텔 월세 매물 안내. 사진, 임대 조건, 위치를 확인하세요.">
+<meta property="og:title" content="임대 매물 안내">
+<meta property="og:description" content="양우로데오시티 1108호 · 복층 · 2026년 올리모델링 · 보증금 500 / 월 65">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;800&family=IBM+Plex+Sans+KR:wght@400;500;700&display=swap">
+<style>
+:root{
+  --bg:#f3f5f7; --surface:#ffffff; --ink:#16202c; --ink-soft:#5a6676; --line:#d8dee6;
+  --brand:#173a5e; --accent:#2f7d78;
+  --font-display:"Noto Serif KR","Nanum Myeongjo",serif;
+  --font-body:"IBM Plex Sans KR","Malgun Gothic","Apple SD Gothic Neo",sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root{--bg:#0f141b;--surface:#171e27;--ink:#e9eef4;--ink-soft:#9aa7b7;--line:#2a3542;--brand:#9cc3ea;--accent:#6cc2bb;color-scheme:dark}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-body);line-height:1.7;font-variant-numeric:tabular-nums}
+header{background:#173a5e;color:#eef3f8;padding-block:40px 32px}
+.wrap{max-width:960px;margin:0 auto;padding-inline:20px}
+h1{font-family:var(--font-display);font-weight:800;font-size:clamp(1.7rem,4.5vw,2.4rem);margin:0;text-wrap:balance}
+header p{margin:6px 0 0;color:#c9d6e3}
+main{padding-block:28px 64px}
+.list{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.card{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);text-decoration:none;color:inherit;min-width:0}
+.card:hover{border-color:var(--accent)}
+.card:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.card img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center 60%;display:block;background:var(--line)}
+.card .body{padding:14px 16px 16px;display:grid;gap:4px}
+.card .area{font-size:.82rem;color:var(--ink-soft)}
+.card h2{font-family:var(--font-display);font-weight:600;font-size:1.2rem;margin:0}
+.card .price{font-weight:700;color:var(--brand);font-size:1.05rem}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.tags span{font-size:.78rem;padding:2px 8px;border:1px solid var(--line);border-radius:999px;color:var(--ink-soft)}
+footer{color:var(--ink-soft);font-size:.86rem;border-top:1px solid var(--line);padding-top:16px;margin-top:40px}
+footer b{color:var(--ink)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>임대 매물 안내</h1>
+    <p>매물을 누르면 사진과 임대 조건을 볼 수 있어요.</p>
+  </div>
+</header>
+<main class="wrap">
+  <div class="list">
+    <a class="card" href="yangwoo-1108/">
+      <img src="yangwoo-1108/img/entry.jpg" alt="양우로데오시티 1108호 현관에서 본 실내" width="789" height="1400">
+      <div class="body">
+        <div class="area">고양시 일산동구 장항동 · 오피스텔</div>
+        <h2>양우로데오시티 1108호</h2>
+        <div class="price">보증금 500 / 월 65</div>
+        <div class="tags"><span>복층</span><span>2026년 올리모델링</span><span>가전 새로 구입</span><span>즉시 입주</span></div>
+      </div>
+    </a>
+  </div>
+  <footer>문의 <b>010-8717-6151</b> · 임대 조건과 권리관계는 계약 전에 별도로 확인해 주세요.</footer>
+</main>
+</body>
+</html>
